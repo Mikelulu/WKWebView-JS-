@@ -17,6 +17,8 @@
 		27B264B41E026FEC00616FFE /* WKWebView_JS__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B264B31E026FEC00616FFE /* WKWebView_JS__UITests.m */; };
 		27B264C21E02700100616FFE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 27B264C11E02700100616FFE /* index.html */; };
 		27B264C51E0271CB00616FFE /* LKWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B264C41E0271CB00616FFE /* LKWKWebViewController.m */; };
+		27C7C0D21E10C3EE00627EFD /* getUsetById.html in Resources */ = {isa = PBXBuildFile; fileRef = 27C7C0D11E10C3EE00627EFD /* getUsetById.html */; };
+		27C7C0D51E10C41400627EFD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7C0D41E10C41400627EFD /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		27B264C11E02700100616FFE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		27B264C31E0271CB00616FFE /* LKWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKWKWebViewController.h; sourceTree = "<group>"; };
 		27B264C41E0271CB00616FFE /* LKWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKWKWebViewController.m; sourceTree = "<group>"; };
+		27C7C0D11E10C3EE00627EFD /* getUsetById.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = getUsetById.html; sourceTree = "<group>"; };
+		27C7C0D31E10C41400627EFD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		27C7C0D41E10C41400627EFD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 		27B2648D1E026FEB00616FFE /* WKWebView与JS交互 */ = {
 			isa = PBXGroup;
 			children = (
+				27C7C0D11E10C3EE00627EFD /* getUsetById.html */,
 				27B264C11E02700100616FFE /* index.html */,
 				27B264911E026FEB00616FFE /* AppDelegate.h */,
 				27B264921E026FEB00616FFE /* AppDelegate.m */,
@@ -113,6 +119,8 @@
 				27B264951E026FEB00616FFE /* ViewController.m */,
 				27B264C31E0271CB00616FFE /* LKWKWebViewController.h */,
 				27B264C41E0271CB00616FFE /* LKWKWebViewController.m */,
+				27C7C0D31E10C41400627EFD /* SecondViewController.h */,
+				27C7C0D41E10C41400627EFD /* SecondViewController.m */,
 				27B264971E026FEB00616FFE /* Main.storyboard */,
 				27B2649A1E026FEB00616FFE /* Assets.xcassets */,
 				27B2649C1E026FEB00616FFE /* LaunchScreen.storyboard */,
@@ -261,6 +269,7 @@
 				27B264C21E02700100616FFE /* index.html in Resources */,
 				27B2649B1E026FEB00616FFE /* Assets.xcassets in Resources */,
 				27B264991E026FEB00616FFE /* Main.storyboard in Resources */,
+				27C7C0D21E10C3EE00627EFD /* getUsetById.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C7C0D51E10C41400627EFD /* SecondViewController.m in Sources */,
 				27B264C51E0271CB00616FFE /* LKWKWebViewController.m in Sources */,
 				27B264961E026FEB00616FFE /* ViewController.m in Sources */,
 				27B264931E026FEB00616FFE /* AppDelegate.m in Sources */,
@@ -524,6 +534,7 @@
 				27B264BA1E026FEC00616FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B264BB1E026FEC00616FFE /* Build configuration list for PBXNativeTarget "WKWebView与JS交互Tests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +543,7 @@
 				27B264BD1E026FEC00616FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B264BE1E026FEC00616FFE /* Build configuration list for PBXNativeTarget "WKWebView与JS交互UITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +552,7 @@
 				27B264C01E026FEC00616FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

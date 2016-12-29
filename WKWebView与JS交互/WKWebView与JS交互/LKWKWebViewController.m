@@ -88,7 +88,8 @@
     self.webView.allowsBackForwardNavigationGestures = YES;
     
     //加载本地的HTML文件
-    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+//    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+     NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"getUsetById" ofType:@"html"];
     NSString *htmlSring = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL URLWithString:htmlPath];
     [self.webView loadHTMLString:htmlSring baseURL:baseURL];
@@ -139,7 +140,10 @@
 }
 //页面加载完成之后调用
 - (void)webView:(WKWebView *)temWebView didFinishNavigation:(WKNavigation *)navigation{
-    
+    NSString *jsString = [NSString stringWithFormat:@"getUserById('%@')",@"1000107"];
+    [self.webView evaluateJavaScript:jsString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+        NSLog(@"%@",result);
+    }];
 }
 //页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error{
@@ -219,6 +223,8 @@
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
      NSLog(@"name:%@ \\\\n body:%@\\\\n frameInfo:%@\\\\n",message.name,message.body,message.frameInfo);
+  
+
     
     if ([message.name isEqualToString:@"Share"]) {
         //分享
